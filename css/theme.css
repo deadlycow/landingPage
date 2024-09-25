@@ -1,0 +1,16 @@
+:root {
+  --clr-olive: olivedrab;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-gray: #635555;
+  --clr-trans: #ffffff00;
+}
+
+.btn {
+  background-color: var(--clr-trans);
+  color: var(--clr-white);
+}
+
+a {
+  color: var(--clr-white);
+}

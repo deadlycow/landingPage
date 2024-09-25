@@ -1,0 +1,8 @@
+@mixin btn-color ($bg-color, $text-color) {
+  background-color: var($bg-color);
+  color: var($text-color);
+}
+
+@mixin link ($text-color) {
+  color: var($text-color);
+}
