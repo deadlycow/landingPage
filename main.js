@@ -13,13 +13,17 @@ const resizeObserver = new ResizeObserver(entries => {
     const { width } = entry.contentRect;
     if (width >= 768) {
       hero.style.height = '100svh';
-      if (sigInElement.style.display === 'flex' || registerElement.style.display === 'flex') {
+
+      if (sigInElement.style.transform === 'translateY(0svh)' || registerElement.style.transform === 'translateY(0svh)') {
         hero.style.width = '70svw';
       }
     }
-    else if (width < 768 && sigInElement.style.display === 'flex' || registerElement.style.display === 'flex') {
-      hero.style.height = '50svh';
+    else if (width < 768) {
       hero.style.width = '100svw';
+
+      if (sigInElement.style.transform === 'translateX(0svw)' || registerElement.style.transform === 'translateX(0svw)') {
+        hero.style.height = '50svh';
+      }
     }
   }
 });
@@ -30,46 +34,34 @@ btnSignIn.addEventListener('click', () => {
 
   if (container.getBoundingClientRect().width > 768) {
     hero.style.width = '70svw';
-    sigInElement.style.display = 'flex';
-    sigInElement.style.transform = 'translateX(0svh)';
+    if (registerElement.style.transform === 'translateX(0svw)') {
+      registerElement.style.transform = 'translateX(30svw)';
+    }
+    sigInElement.style.transform = 'translateX(0svw)';
   }
   else {
+    if (registerElement.style.transform === 'translateY(0svh)') {
+      registerElement.style.transform = 'translateY(50svh)';
+    }
     hero.style.height = '50svh';
-    sigInElement.style.display = 'flex';
     sigInElement.style.transform = 'translateY(0svh)';
   }
-
-
-  // if (registerElement.style.display == 'flex') {
-   
-  //   registerElement.style.transform = 'translateY(50svh)';
-
-  //   registerElement.addEventListener('transitionend', () => {
-  //     registerElement.style.display = 'none';
-  //   }, { once: true });
-  // }
-
-
-
 });
 
 btnReg.addEventListener('click', () => {
 
   if (container.getBoundingClientRect().width > 768) {
-    console.log('hej');
+    hero.style.width = '70svw';
+    if (sigInElement.style.transform === 'translateX(0svw)') {
+      sigInElement.style.transform = 'translateX(30svw)';
+    }
+    registerElement.style.transform = 'translateX(0svw)';
   }
-
-  hero.style.height = '50svh';
-
-  if (sigInElement.style.display == 'flex') {
-    sigInElement.style.transform = 'translateY(50svh)';
-
-    sigInElement.addEventListener('transitionend', () => {
-      sigInElement.style.display = 'none';
-      console.log('done');
-    }, { once: true });
+  else {
+    if (sigInElement.style.transform === 'translateY(0svh)') {
+      sigInElement.style.transform = 'translateY(50svh)';
+    }
+    hero.style.height = '50svh';
+    registerElement.style.transform = 'translateY(0svh)';
   }
-
-  registerElement.style.display = 'flex';
-  registerElement.style.transform = 'translateY(0)';
 });
