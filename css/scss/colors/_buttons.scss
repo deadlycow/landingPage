@@ -1,3 +1,11 @@
-.btn {
-  @include btn-color (--clr-trans, --clr-white)
+.btn-signin, .btn-register {
+  @include btn-color (--clr-trans, --clr-white);
 }
+
+@include theme-buttons (
+  'dark', (--clr-gray, --clr-olive), (--clr-yellow, --clr-black)
+);
+
+@include theme-buttons (
+  'orange', (--clr-yellow, --clr-black), (--clr-yellow, --clr-black)
+);

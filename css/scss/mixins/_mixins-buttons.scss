@@ -1,7 +1,8 @@
-.btn {
+@mixin btn {
   border: 0;
-  font-size: 1.5rem;
   cursor: pointer;
+  border-radius: 8px;
+  padding: .2em;
 
   &:hover {
     text-decoration: underline;

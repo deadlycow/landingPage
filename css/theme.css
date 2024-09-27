@@ -4,13 +4,52 @@
   --clr-black: #000000;
   --clr-gray: #635555;
   --clr-trans: #ffffff00;
+  --clr-yellow: #fbff00;
+  --clr-rebeca: #791753;
 }
 
-.btn {
+.btn-signin, .btn-register {
   background-color: var(--clr-trans);
   color: var(--clr-white);
 }
 
+.bg-dark .btn-signin {
+  background-color: var(--clr-gray);
+  color: var(--clr-olive);
+}
+.bg-dark .btn-register {
+  background-color: var(--clr-yellow);
+  color: var(--clr-black);
+}
+
+.bg-orange .btn-signin {
+  background-color: var(--clr-yellow);
+  color: var(--clr-black);
+}
+.bg-orange .btn-register {
+  background-color: var(--clr-yellow);
+  color: var(--clr-black);
+}
+
 a {
   color: var(--clr-white);
+}
+
+h1 {
+  color: var(--clr-white);
+}
+
+h2 {
+  color: var(--clr-black);
+}
+
+.bg-dark h1 {
+  color: var(--clr-rebeca);
+}
+.bg-dark h2 {
+  color: var(--clr-yellow);
+}
+
+label {
+  color: var(--clr-black);
 }

@@ -1,5 +1,7 @@
-@import 'mixins/mixins-buttons';
-@import 'mixins/mixins-links';
+@import 'mixins/mixins';
+
+@import 'components/buttons';
+@import 'components/typography';
 
 
 
@@ -15,13 +17,6 @@ body {
 
 // coloring font and background sections
 
-h1 {
-  color: var(--clr-white);
-}
-
-label {
-  color: var(--clr-black);
-}
 
 .clr-bg {
   background-color: var(--clr-olive);
@@ -65,7 +60,7 @@ label {
 
   h1 {
     text-align: center;
-    font-size: 3rem;
+    
   }
 
   .btn-container {
