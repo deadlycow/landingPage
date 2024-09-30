@@ -9,3 +9,13 @@
   }
 }
 
+@mixin btn-circle ($border-r, $circle-height, $circle-aspect, $circle-border) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: $circle-border, solid;
+  border-radius: $border-r;
+  height: $circle-height;
+  aspect-ratio: $circle-aspect;
+  cursor: pointer;
+}

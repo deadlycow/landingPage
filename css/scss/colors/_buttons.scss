@@ -2,6 +2,14 @@
   @include btn-color (--clr-trans, --clr-white);
 }
 
+.btn-circle {
+  @include btn-circle (--clr-olive, --clr-trans);
+
+  &:active {
+    background-color: black;
+  }
+}
+
 @include theme-buttons (
   'dark', (--clr-gray, --clr-olive), (--clr-yellow, --clr-black)
 );

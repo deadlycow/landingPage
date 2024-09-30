@@ -3,6 +3,15 @@
   color: var($text-color);
 }
 
+@mixin btn-circle ($bg-color, $border-color) {
+  background-color: var($bg-color);
+  border-color: var($border-color);
+
+  &::active {
+    background-color: orange;
+  }
+}
+
 @mixin link-color ($text-color) {
   color: var($text-color);
 }

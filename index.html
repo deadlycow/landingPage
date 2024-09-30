@@ -9,8 +9,8 @@
   <title>Landingpage</title>
 </head>
 
-<body> 
-  <div class="container-box bg-dark">
+<body>
+  <div class="container-box">
     <div class="hero clr-bg cst-pad">
       <h1>Wilkommen till this Page!</h1>
       <div class="btn-container">
@@ -23,31 +23,42 @@
     </div>
 
     <div id="signIn" class="sign-in clr-bg-2 cst-pad">
-      <div class="input-container">
-        <label for="userName">User name</label>
-        <input type="text" name="userName" id="userName" placeholder="...">
+      <div>
+        <div class="input-container">
+          <label for="userName">User name</label>
+          <input type="text" name="userName" id="userName" placeholder="...">
+        </div>
+        <div class="input-container">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password" placeholder="...">
+        </div>
+        <button class="signin-btn">Sign in</button>
       </div>
-      <div class="input-container">
-        <label for="password">Password</label>
-        <input type="text" name="password" id="password" placeholder="...">
+      <div id="closeSignIn" class="btn-circle">
+        <img src="img/cross-svgrepo-com (white).svg" alt="">
       </div>
-      <button class="signin-btn">Sign in</button>
     </div>
 
     <div id="register" class="register clr-bg-2 cst-pad">
-      <div class="input-container">
-        <label for="fName">First name</label>
-        <input type="text" name="fName" id="fName" placeholder="...">
+      <div>
+        <div class="input-container">
+          <label for="fName">First name</label>
+          <input type="text" name="fName" id="fName" placeholder="...">
+        </div>
+        <div class="input-container">
+          <label for="lName">Last name</label>
+          <input type="text" name="lName" id="lName" placeholder="...">
+        </div>
+        <div class="input-container">
+          <label for="email">E-mail</label>
+          <input type="text" name="email" id="email" placeholder="...">
+        </div>
+        <button class="signin-btn">Register</button>
       </div>
-      <div class="input-container">
-        <label for="lName">Last name</label>
-        <input type="text" name="lName" id="lName" placeholder="...">
+
+      <div id="closeRegister" class="btn-circle">
+        <img src="img/cross-svgrepo-com (white).svg" alt="">
       </div>
-      <div class="input-container">
-        <label for="email">E-mail</label>
-        <input type="text" name="email" id="email" placeholder="...">
-      </div>
-      <button class="signin-btn">Register</button>
     </div>
 
 

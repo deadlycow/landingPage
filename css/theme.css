@@ -13,6 +13,17 @@
   color: var(--clr-white);
 }
 
+.btn-circle {
+  background-color: var(--clr-olive);
+  border-color: var(--clr-trans);
+}
+.btn-circle::active {
+  background-color: orange;
+}
+.btn-circle:active {
+  background-color: black;
+}
+
 .bg-dark .btn-signin {
   background-color: var(--clr-gray);
   color: var(--clr-olive);
