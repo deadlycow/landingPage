@@ -1,14 +1,14 @@
-@include heading-colors (
-  --clr-white,
-  --clr-black
-);
+@include heading-colors (--clr-white,
+  --clr-black);
 
-@include theme-headings (
-  'dark',
+@include theme-headings ('dark',
   --clr-rebeca,
-  --clr-yellow
-);
+  --clr-yellow);
 
 label {
   color: var(--clr-black);
+}
+
+p {
+  @include text (--clr-white);
 }

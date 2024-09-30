@@ -12,6 +12,10 @@
   }
 }
 
+@mixin text ($color) {
+  color: var($color);
+}
+
 @mixin link-color ($text-color) {
   color: var($text-color);
 }

@@ -42,6 +42,14 @@
   color: var(--clr-black);
 }
 
+.clr-bg {
+  background-color: var(--clr-olive);
+}
+
+.clr-bg-2 {
+  background-color: var(--clr-white);
+}
+
 a {
   color: var(--clr-white);
 }
@@ -63,4 +71,8 @@ h2 {
 
 label {
   color: var(--clr-black);
+}
+
+p {
+  color: var(--clr-white);
 }
