@@ -1,4 +1,5 @@
 :root {
+  --clr-olive-dark: rgba(70, 96, 19, 0.6);
   --clr-olive: olivedrab;
   --clr-white: #ffffff;
   --clr-black: #000000;
@@ -6,6 +7,11 @@
   --clr-trans: #ffffff00;
   --clr-yellow: #fbff00;
   --clr-rebeca: #791753;
+}
+
+.btn-message {
+  background-color: var(--clr-trans);
+  color: var(--clr-white);
 }
 
 .btn-signin, .btn-register {
@@ -42,12 +48,16 @@
   color: var(--clr-black);
 }
 
-.clr-bg {
+.bg-color-primary {
   background-color: var(--clr-olive);
 }
 
 .clr-bg-2 {
   background-color: var(--clr-white);
+}
+
+.clr-bg-dark {
+  background-color: var(--clr-olive-dark);
 }
 
 a {
@@ -75,4 +85,8 @@ label {
 
 p {
   color: var(--clr-white);
+}
+
+.social-icon {
+  background-color: var(--clr-white);
 }

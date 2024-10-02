@@ -1,3 +1,15 @@
 .container-padding {
   padding: 1rem;
 }
+
+.container-profile {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 2rem;
+}
+
+.container-profile-socials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}

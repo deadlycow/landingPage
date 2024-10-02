@@ -4,6 +4,8 @@
 @import 'components/typography';
 @import 'components/container';
 @import 'components/wrapper';
+@import 'components/links';
+@import 'components/img';
 
 
 
@@ -174,18 +176,8 @@ body {
 
 // next page 
 
-.container-profile {
-  display: flex;
-  justify-content: space-around;
-  margin-block: 2rem;
-}
 
-.profile {
-  height: 10rem;
-  aspect-ratio: 1;
-  border: 2px solid black;
-  background-color: #928b8b;
-}
+
 
 nav {
   display: flex;

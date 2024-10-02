@@ -1,3 +1,7 @@
+.btn-message {
+  @include btn-color (--clr-trans, --clr-white);
+}
+
 .btn-signin, .btn-register {
   @include btn-color (--clr-trans, --clr-white);
 }

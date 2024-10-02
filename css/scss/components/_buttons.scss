@@ -6,3 +6,8 @@
 .btn-circle {
   @include btn-circle(50%, 3em, 1, 3px);
 }
+
+.btn-message {
+  @include btn;
+  font-size: 1rem;
+}

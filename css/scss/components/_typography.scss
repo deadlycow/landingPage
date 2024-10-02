@@ -8,7 +8,18 @@ h2 {
   font-size: 2.5rem;
 }
 
-p {
+
+.p-small {
+  @include text;
+  font-size: .875em;
+}
+
+.p-lg {
+  @include text;
+  font-size: 1.25em;
+}
+
+.p-extra-lg {
   @include text;
   font-size: 1.5rem;
 }
