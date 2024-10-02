@@ -8,19 +8,7 @@ img {
   @include image-round;
 }
 
-.social-icon {
+.icon-size {
   height: 1.5em;
   aspect-ratio: 1;
-}
-
-.img-bg-fill {
-  border-radius: 1rem;
-  overflow: visible;
-}
-
-
-// since github icon is not realy round on the top, some special things needed done
-.img-bg-fill-extra {
-  border-radius: 50% 50% 50% 50% / 52% 52% 49% 49% ;
-  overflow: visible;
 }
